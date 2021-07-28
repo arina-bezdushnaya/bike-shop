@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">  
+  <title>Bike Shop</title>
+</head>
+<body>
+  <div class="wrapper-main">
+    <header class="header">
+      <div class="logo">
+        <img src="icons/logo.png" alt="logo" class="header__logo">
+      </div>
+      <h1 class="header__title">Bike shop</h1>
+    </header>
+
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about-us-page.html">About us</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link_active" href="#">Contact pages</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-section">
+      <h2 class="main-section__header">Contact us</h2>
+      <div class="container">
+        <form action="..." method="post" class="form">
+          <label for="name-text">Your name*</label><br>
+          <input type="text" name="name" id="name-text" value="" class="form__input"><br>
+          <label for="email-text">Your e-mail*</label><br>
+          <input type="password" name="email" id="email-text" class="form__input"><br>
+          <label for="text">Your messsage*</label><br>
+          <textarea rows="10" id="text" class="form__textarea"></textarea><br>
+          <input type="submit" id="submit" value="Submit" class="form__input">
+        </form>
+  
+      </div>
+    </main>
+   
+    <aside class="sidebar">
+
+      <div class="search-widget">
+        <label for="tags">Bike brands: </label>
+        <input type="text" id="tags" name="autocomplete">
+      </div>
+
+      <div class="datepicker">
+        Date:<br>
+        <label class="datepicker__title" for="from">from</label>
+        <input type="text" id="from" name="from"><br>
+        <label class="datepicker__title" for="to">to</label>
+        <input type="text" id="to" name="to">
+
+        <div class="datepicker__animations">Animations:<br>
+          <select name="effects" id="animations">
+            <option value="show">Show (default)</option>
+            <option value="slideDown">Slide down</option>
+            <option value="fadeIn">Fade in</option>
+            <option value="blind">Blind (UI Effect)</option>
+            <option value="bounce">Bounce (UI Effect)</option>
+            <option value="clip">Clip (UI Effect)</option>
+            <option value="drop">Drop (UI Effect)</option>
+            <option value="fold">Fold (UI Effect)</option>
+            <option value="slide">Slide (UI Effect)</option>
+            <option value="">None</option>
+          </select>
+        </div>
+      </div>
+  
+    </aside> 
+    <footer class="footer">
+      <div class="footer__rights">© 2021 Bike shop | All Rights Reserved</div>
+    </footer>
+  
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
